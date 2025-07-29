@@ -7,7 +7,7 @@ To set up the repository, follow these steps:
 
 1. **Clone the repository:**
         
-        git clone
+        git clone https://github.com/SMU-Quantum/2025-08_UNSW_Quantum_Optimization.git
         cd 2025-08_UNSW_Quantum_Optimization
 
 2. **Set up a virtual environment (recommended):**
@@ -39,19 +39,15 @@ Ensure that your system has Python 3.9 or higher installed.
 ### Explanation
 
 Suppose the equal superposition state:
-$$
-|+\rangle_n = H^{\otimes n}|0\rangle_n = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle_n
-$$
 
-Furthermore, suppose a function $ f: \{0, \dots, 2^n - 1\} \to \mathbb{R} $ and a corresponding quantum operation:
-$$
-F: |x\rangle_n |0\rangle_m \mapsto |x\rangle_n |f(x)\rangle_m
-$$
+$$|+\rangle_n = H^{\otimes n}|0\rangle_n = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle_n $$
+
+Furthermore, suppose a function $f: \{0, \dots, 2^n - 1\} \to \mathbb{R}$ and a corresponding quantum operation:
+
+$$ F: |x\rangle_n |0\rangle_m \mapsto |x\rangle_n |f(x)\rangle_m $$
 
 Thus, we get:
-$$
-F|+\rangle_n = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle_n |f(x)\rangle_m
-$$
+$$ F|+\rangle_n = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle_n |f(x)\rangle_m $$
 
 And the quantum computer evaluates the exponential number of solutions in parallel!
 
