@@ -20,7 +20,7 @@ To set up the repository, follow these steps:
         pip install -r requirements.txt
 
 
-Ensure that your system has Python 3.9 or higher installed.
+Ensure that your system has Python 3.10 or lower installed. 
 
 
 
@@ -56,10 +56,10 @@ Doesn't it?
 Unfortunately:
 - It remains an exponential number of possible solutions.
 - The quantum computer does NOT tell us which one achieves the optimum.
-- If we measure the qubits in the state above, we just sample every possible solution with the same probability of $ \frac{1}{2^n} $, as we could easily do classically.
+- If we measure the qubits in the state above, we just sample every possible solution with the same probability of $\frac{1}{2^n}$, as we could easily do classically.
 
 ---
 
 ### Key Takeaway
 
-→ To get a quantum computer to tell us the optimal solution of a combinatorial optimization problem with probability higher than $ \frac{1}{2^n} $, we have to work a bit harder...
+→ To get a quantum computer to tell us the optimal solution of a combinatorial optimization problem with probability higher than $\frac{1}{2^n}$, we have to work a bit harder...
