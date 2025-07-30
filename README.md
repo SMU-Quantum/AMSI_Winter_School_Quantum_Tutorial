@@ -1,30 +1,117 @@
 # 2025-08 UNSW Quantum Optimization
 Tutorial on Quantum Optimization
 
-## Installation 
+This document outlines the steps to set up the development environment for the project. Due to dependencies such as **CPLEX**, which currently supports up to Python 3.10, it is essential to use **Python 3.10** or earlier.
 
-To set up the repository, follow these steps:
+---
 
-1. **Clone the repository:**
-        
-        git clone https://github.com/SMU-Quantum/2025-08_UNSW_Quantum_Optimization.git
-        cd 2025-08_UNSW_Quantum_Optimization
+## ✅ Prerequisites
 
-2. **Set up a virtual environment (recommended):**
+Ensure that **Python 3.10** is installed on your system.
 
-        python3 -m venv venv
-        venv\Scripts\activate  # on linux, or macos use `source venv/bin/activate`
+To verify your Python version, run:
 
-3. **Install Dependencies:**
+    python --version
+    # or
+    python3 --version
 
-        pip install -r requirements.txt
+If Python 3.10 is not installed, follow the instructions below based on your operating system:
 
+- **Windows**: Download from [python.org](https://www.python.org/downloads/)
+- **macOS**: Use `brew install python@3.10` (if available)
+- **Linux (Debian/Ubuntu)**: Install via `apt` (see troubleshooting section)
 
-Ensure that your system has Python 3.10 or lower installed. 
+> ⚠️ **Note**: Avoid using Python versions newer than 3.10 to ensure compatibility with CPLEX and other dependencies.
 
+---
 
+## 🛠️ Setup Instructions
 
+### 1. Clone the Repository
 
+Begin by cloning the project repository:
+
+    git clone https://github.com/SMU-Quantum/2025-08_UNSW_Quantum_Optimization.git
+    cd 2025-08_UNSW_Quantum_Optimization
+
+### 2. Create and Activate a Virtual Environment
+
+Using a virtual environment is strongly recommended to isolate project dependencies.
+
+#### Create the virtual environment:
+
+    python3.10 -m venv venv
+
+> On **Windows**, if `python3.10` is not recognized, use:  
+> 
+>     py -3.10 -m venv venv
+
+#### Activate the virtual environment:
+
+| OS       | Activation Command               |
+|---------|----------------------------------|
+| Windows | `venv\Scripts\activate`          |
+| macOS   | `source venv/bin/activate`       |
+| Linux   | `source venv/bin/activate`       |
+
+After activation, you should see `(venv)` prefixed in your shell prompt.
+
+### 3. Verify Python Version
+
+Confirm that the correct Python interpreter is being used:
+
+    python --version
+
+Expected output:
+    
+    Python 3.10.x
+
+### 4. Install Project Dependencies
+
+Install all required packages from the `requirements.txt` file:
+
+    pip install -r requirements.txt
+
+> Ensure the virtual environment is active before running this command.
+
+---
+
+## ⚠️ Troubleshooting
+
+### ❌ `python3.10` command not found
+
+#### Ubuntu/Debian Linux
+
+Install Python 3.10 and required components:
+
+    sudo apt update
+    sudo apt install python3.10 python3.10-venv python3.10-dev
+
+Then create the virtual environment:
+
+    python3.10 -m venv venv
+
+#### macOS (with Homebrew)
+
+Install Python 3.10 using Homebrew:
+
+    brew install python@3.10
+
+Due to Homebrew's path structure, you may need to use the full path:
+
+    # Intel Mac
+    /usr/local/bin/python3.10 -m venv venv
+
+    # Apple Silicon (M1/M2/M3)
+    /opt/homebrew/bin/python3.10 -m venv venv
+
+#### Windows
+
+Use the Python Launcher for Windows:
+
+    py -3.10 -m venv venv
+
+This method reliably targets Python 3.10 even when multiple versions are installed.
 
 ---
 
