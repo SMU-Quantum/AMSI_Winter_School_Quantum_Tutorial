@@ -3,7 +3,7 @@ Tutorial on Quantum Optimization
 
 This document outlines the steps to set up the development environment for the project. Due to dependencies such as **CPLEX**, which currently supports up to Python 3.10, it is essential to use **Python 3.10** or earlier.
 
-(or you can use [uv]())
+(or you can use [uv](https://github.com/SMU-Quantum/2025-08_UNSW_Quantum_Optimization/blob/main/how_to_use_uv.md))
 
 ---
 
