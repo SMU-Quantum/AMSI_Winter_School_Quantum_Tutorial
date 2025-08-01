@@ -1,9 +1,9 @@
-# 2025-08 UNSW Quantum Optimization
+# 2025-08 Australian Mathematical Sciences Institute Winter School
 Tutorial on Quantum Optimization
 
 This document outlines the steps to set up the development environment for the project. Due to dependencies such as **CPLEX**, which currently supports up to Python 3.10, it is essential to use **Python 3.10** or earlier.
 
-(or you can use [uv](https://github.com/SMU-Quantum/2025-08_UNSW_Quantum_Optimization/blob/main/how_to_use_uv.md))
+(or you can use [uv](https://github.com/SMU-Quantum/AMSI_Winter_School_Quantum_Tutorial/blob/main/how_to_use_uv.md))
 
 ---
 
@@ -33,8 +33,8 @@ If Python 3.10 is not installed, follow the instructions below based on your ope
 
 Begin by cloning the project repository:
 
-    git clone https://github.com/SMU-Quantum/2025-08_UNSW_Quantum_Optimization.git
-    cd 2025-08_UNSW_Quantum_Optimization
+    git clone https://github.com/SMU-Quantum/AMSI_Winter_School_Quantum_Tutorial.git
+    cd AMSI_Winter_School_Quantum_Tutorial
 
 ### 2. Create and Activate a Virtual Environment
 
@@ -136,7 +136,8 @@ Furthermore, suppose a function $f: \{0, \dots, 2^n - 1\} \to \mathbb{R}$ and a 
 $$ F: |x\rangle_n |0\rangle_m \mapsto |x\rangle_n |f(x)\rangle_m $$
 
 Thus, we get:
-$$ F|+\rangle_n = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle_n |f(x)\rangle_m $$
+
+$$F|+\rangle_n = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle_n |f(x)\rangle_m$$
 
 And the quantum computer evaluates the exponential number of solutions in parallel!
 
