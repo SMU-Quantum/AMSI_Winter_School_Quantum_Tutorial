@@ -1,4 +1,4 @@
-# 2025-08 Australian Mathematical Sciences Institute Winter School
+# 2025-09 Australian Mathematical Sciences Institute Winter School
 Tutorial on Quantum Optimization
 
 This document outlines the steps to set up the development environment for the project. Due to dependencies such as **CPLEX**, which currently supports up to Python 3.10, it is essential to use **Python 3.10** or earlier.
